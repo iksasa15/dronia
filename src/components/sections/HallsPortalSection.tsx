@@ -1,18 +1,18 @@
 const BENEFITS = [
   {
     num: '01',
-    title: 'تصاريح جوية معتمدة',
-    text: 'مسار واضح للموافقات مع الجهات المختصة.',
+    title: 'تصاريح مرتّبة',
+    text: 'نمشي معاك مسار الموافقات عشان ما يتعطّل عرضك على «باقي الإجراءات».',
   },
   {
     num: '02',
-    title: 'هامش ربح مجزٍ',
-    text: 'دخل إضافي على كل فعالية دون التزامات تشغيلية ثقيلة.',
+    title: 'دخل زيادة بدون تعب معدات',
+    text: 'تضيف خدمة التصوير الجوّي لباقتك وتستفيد مادياً — بدون ما تشتري معدات ولا تظبط طاقم تصوير جوّي كامل.',
   },
   {
     num: '03',
-    title: 'دعم تشغيلي كامل',
-    text: 'تنسيق مباشر مع طاقم القاعة لضمان تجربة سلسة.',
+    title: 'دعم تشغيلي ويا فريقك',
+    text: 'ننسّق مباشرة مع منسّق الفعالية عندك عشان يوم الزفاف أو الحفل يمشي على مهله.',
   },
 ] as const
 
@@ -26,8 +26,8 @@ export function HallsPortalSection() {
             بوابة شركاء القاعات
           </h2>
           <p className="halls-lead">
-            أضف التصوير الجوي لباقاتك وارفع عوائدك دون تكاليف معدات أو ضغط
-            تشغيلي على فريقك.
+            حاب تضيف «تصوير من فوق» لباقاتك؟ درونيا تمشّيها معاك من غير ما تزيد
+            ضغط التشغيل على فريقك — نرتّب الطيّار والتصاريح والتنسيق.
           </p>
           <ul className="benefits-list">
             {BENEFITS.map((b) => (
@@ -49,37 +49,37 @@ export function HallsPortalSection() {
           aria-labelledby="halls-form-title"
         >
           <p id="halls-form-title" className="sr-only">
-            نموذج تفعيل بوابة القاعات
+            طلب تفعيل بوابة القاعة
           </p>
           <label className="field">
             <span>اسم القاعة</span>
             <input name="hall" type="text" autoComplete="organization" />
           </label>
           <label className="field">
-            <span>المسؤول</span>
+            <span>اسم المسؤول</span>
             <input name="contact" type="text" autoComplete="name" />
           </label>
           <label className="field">
-            <span>الجوال</span>
+            <span>رقم الجوال</span>
             <input name="phone" type="tel" autoComplete="tel" />
           </label>
           <label className="field">
-            <span>البريد الإلكتروني</span>
+            <span>البريد</span>
             <input name="email" type="email" autoComplete="email" />
           </label>
           <label className="field">
-            <span>الفعاليات شهرياً</span>
+            <span>تقريباً كم مناسبة بالشهر؟</span>
             <select name="volume" defaultValue="">
               <option value="" disabled>
-                اختر…
+                اختَر…
               </option>
-              <option>١ إلى ٥ فعاليات</option>
-              <option>٦ إلى ١٥ فعالية</option>
-              <option>أكثر من ١٥ فعالية</option>
+              <option>١ إلى ٥</option>
+              <option>٦ إلى ١٥</option>
+              <option>أكثر من ١٥</option>
             </select>
           </label>
           <button type="submit" className="btn btn-primary btn-block">
-            تفعيل البوابة
+            أرسل طلب التفعيل
           </button>
         </form>
       </div>

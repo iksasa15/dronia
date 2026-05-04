@@ -1,18 +1,18 @@
 const BENEFITS = [
   {
     num: '01',
-    title: 'طلبات مجدولة',
-    text: 'تركيزك على الإخراج الفني بينما ننسّق الطلبات.',
+    title: 'طلبات تجيك جاهزة',
+    text: 'أقل دوران على البحث عن عميل؛ نساعد يوصلك شغل منظم يوم الفعالية.',
   },
   {
     num: '02',
-    title: 'حماية قانونية',
-    text: 'مسار واضح للتصاريح والغطاء التأميني حسب السياسات.',
+    title: 'غطاء قانوني أوضح',
+    text: 'مسار التصاريح والتأمين يتبلور معاك حسب السياسات — عشان تطير براحة بال.',
   },
   {
     num: '03',
-    title: 'دخل مستدام',
-    text: 'عوائد تتناسب مع خبرتك ومعداتك وباقات الخدمة.',
+    title: 'دخل يثبت مع خبرتك',
+    text: 'عوائد تتناسب مع مستواك ومعداتك ونوع الخدمة اللي تقدّمها.',
   },
 ] as const
 
@@ -23,11 +23,11 @@ export function PilotsFleetSection() {
         <div className="halls-copy">
           <p className="section-kicker section-kicker-en">ELITE FLEET</p>
           <h2 id="pilots-title" className="section-title">
-            أسطول طيّاري النخبة
+            شبكة طيّارين نخبة
           </h2>
           <p className="halls-lead">
-            انضمّ إلى شبكة درونيا للحصول على طلبات مجدولة ودعم مؤسسي يرفع
-            جودة تجربتك للعميل.
+            إذا أنت مرخّص وتبي شغل أنظف وطلبات أقلّ لفّة، انضم لشبكة درونيا — ندعمك
+            تشغيلياً ونخلي تركيزك على الإخراج الفني.
           </p>
           <ul className="benefits-list">
             {BENEFITS.map((b) => (
@@ -49,32 +49,32 @@ export function PilotsFleetSection() {
           aria-labelledby="pilots-form-title"
         >
           <p id="pilots-form-title" className="sr-only">
-            نموذج انضمام الطيّارين
+            طلب انضمام طيّار
           </p>
           <label className="field">
-            <span>الاسم</span>
+            <span>الاسم الكامل</span>
             <input name="name" type="text" autoComplete="name" />
           </label>
           <label className="field">
-            <span>الجوال</span>
+            <span>رقم الجوال</span>
             <input name="phone" type="tel" autoComplete="tel" />
           </label>
           <label className="field">
-            <span>شهادة GACA</span>
+            <span>حالة ترخيص GACA</span>
             <select name="license" defaultValue="">
               <option value="" disabled>
-                اختر الحالة
+                اختَر…
               </option>
-              <option>مرخّص (مستوى معتمد)</option>
-              <option>شهادات معتمدة أخرى</option>
-              <option>قيد الإصدار</option>
+              <option>مرخّص — مستوى معتمد</option>
+              <option>شهادات ثانية معتمدة</option>
+              <option>لسه قيد الإصدار</option>
             </select>
           </label>
           <label className="field">
-            <span>التخصص</span>
+            <span>تخصّصك</span>
             <select name="spec" defaultValue="">
               <option value="" disabled>
-                فئة الخبرة
+                وش أغلب شغلك؟
               </option>
               <option>FPV</option>
               <option>تصوير داخلي</option>
@@ -84,11 +84,11 @@ export function PilotsFleetSection() {
             </select>
           </label>
           <label className="field">
-            <span>Portfolio</span>
+            <span>رابط أعمالك (بورتفوليو)</span>
             <input name="portfolio" type="url" placeholder="https://" />
           </label>
           <button type="submit" className="btn btn-primary btn-block">
-            تقديم الطلب
+            أرسل طلب الانضمام
           </button>
         </form>
       </div>

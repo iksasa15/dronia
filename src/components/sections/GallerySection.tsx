@@ -1,15 +1,15 @@
 const IMAGES = [
   {
     src: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=720&q=80',
-    alt: 'لقطة جوية لمنطقة طبيعية',
+    alt: 'لقطة علوية لمنطقة طبيعية',
   },
   {
     src: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=720&q=80',
-    alt: 'منظر علوي لساحل',
+    alt: 'منظر من فوق لساحل',
   },
   {
     src: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=720&q=80',
-    alt: 'منظر جوي لغابة وجبال',
+    alt: 'منظر جوّي لغابة وجبال',
   },
   {
     src: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=720&q=80',
@@ -21,10 +21,13 @@ export function GallerySection() {
   return (
     <section id="gallery" className="section gallery" aria-labelledby="gallery-title">
       <div className="shell">
-        <p className="section-kicker">معرضنا</p>
+        <p className="section-kicker">معرض الشغل</p>
         <h2 id="gallery-title" className="section-title">
-          من أعمالنا الجوية
+          نماذج من اللقطات الجوّية
         </h2>
+        <p className="section-lead gallery-intro">
+          كذا يطلع الجوّ لما يكون التصوير مرتب — الأصل من أرشيف نمطي للعرض فقط.
+        </p>
         <ul className="gallery-grid">
           {IMAGES.map((img) => (
             <li key={img.src} className="gallery-cell">

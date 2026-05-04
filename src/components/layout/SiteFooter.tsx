@@ -1,8 +1,8 @@
 const FOOTER_LINKS = [
   { href: '#about', label: 'من نحن' },
   { href: '#services', label: 'خدماتنا' },
-  { href: '#gallery', label: 'معرضنا' },
-  { href: '#pilots', label: 'الطيارين' },
+  { href: '#gallery', label: 'معرض الشغل' },
+  { href: '#pilots', label: 'الطيّارين' },
   { href: '#halls', label: 'بوابة القاعات' },
 ] as const
 
@@ -12,7 +12,7 @@ export function SiteFooter() {
       <div className="shell footer-grid">
         <div className="footer-brand">
           <span className="logo-mark footer-logo">DRONIA</span>
-          <p className="footer-tag">التوثيق الجوي الذكي</p>
+          <p className="footer-tag">نخلي التصوير الجوّي سهل على القاعة والعميل</p>
         </div>
         <nav className="footer-nav" aria-label="روابط سفلية">
           {FOOTER_LINKS.map(({ href, label }, i) => (
@@ -27,7 +27,7 @@ export function SiteFooter() {
             </span>
           ))}
         </nav>
-        <p className="footer-copy">© 2026 DRONIA. جميع الحقوق محفوظة.</p>
+        <p className="footer-copy">© 2026 درونيا DRONIA — كل الحقوق لنا.</p>
       </div>
     </footer>
   )

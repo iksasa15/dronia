@@ -13,16 +13,33 @@
   --color-brand-muted: rgba(5, 67, 145, 0.55);
   --color-card-shade: #061f3d;
   --color-mission-bg: rgba(5, 67, 145, 0.25);
-  --shadow-card: 0 20px 50px rgba(0, 0, 0, 0.35);
-  --color-header-bg: rgba(3, 10, 18, 0.88);
-  --color-hero-glow: rgba(94, 177, 250, 0.12);
+  --shadow-card: 0 24px 56px rgba(0, 0, 0, 0.42);
+  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.25);
+  --color-header-bg: rgba(3, 10, 18, 0.78);
+  --color-hero-glow: rgba(94, 177, 250, 0.14);
   --color-section-services: #050f1a;
+  --color-glass-border: rgba(94, 177, 250, 0.18);
 
-  --font-sans: 'Tajawal', 'Segoe UI', system-ui, sans-serif;
+  /* Type — matches font/AppFont.swift (IBM Plex Sans Arabic) */
+  --font-sans: 'IBM Plex Sans Arabic', 'Segoe UI', system-ui, sans-serif;
+
+  /* Spacing & radii */
+  --space-1: 0.35rem;
+  --space-2: 0.55rem;
+  --space-3: 0.85rem;
+  --space-4: 1.25rem;
+  --space-5: 1.75rem;
+  --space-6: 2.5rem;
+  --space-7: 3.5rem;
+  --radius-sm: 0.45rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.35rem;
+  --radius-pill: 999px;
 
   font-family: var(--font-sans);
-  font-size: 18px;
-  line-height: 1.55;
+  font-size: 17px;
+  line-height: 1.58;
   font-weight: 400;
   color: var(--color-text);
   background-color: var(--color-bg);
@@ -51,10 +68,12 @@ html[data-theme='light'] {
   --color-brand-muted: rgba(5, 67, 145, 0.2);
   --color-card-shade: #d4e4f7;
   --color-mission-bg: rgba(5, 67, 145, 0.08);
-  --shadow-card: 0 12px 40px rgba(5, 67, 145, 0.12);
-  --color-header-bg: rgba(238, 243, 249, 0.92);
-  --color-hero-glow: rgba(5, 67, 145, 0.08);
+  --shadow-card: 0 16px 48px rgba(5, 67, 145, 0.14);
+  --shadow-soft: 0 6px 24px rgba(5, 67, 145, 0.08);
+  --color-header-bg: rgba(238, 243, 249, 0.82);
+  --color-hero-glow: rgba(5, 67, 145, 0.1);
   --color-section-services: #e4ecf7;
+  --color-glass-border: rgba(5, 67, 145, 0.12);
 
   color-scheme: light;
 }

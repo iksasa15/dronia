@@ -3,28 +3,29 @@ export function HeroSection() {
     <section className="hero" aria-labelledby="hero-title">
       <div className="hero-bg" aria-hidden="true" />
       <div className="hero-inner shell">
-        <p className="hero-kicker">شراكات رقمية للأفراح والمناسبات</p>
+        <p className="hero-kicker">شراكة رقمية للأفراح والمناسبات داخل السعودية</p>
         <p className="hero-brand" aria-hidden="true">
           DRONIA
         </p>
         <h1 id="hero-title" className="hero-title">
-          <span className="hero-title-line">ارتقِ بمنشأتك</span>{' '}
-          <span className="hero-title-line hero-title-accent">مع درونيا</span>
+          <span className="hero-title-line">طوّر شغل قاعتك أو تنظيمك</span>{' '}
+          <span className="hero-title-line hero-title-accent">وخلّ درونيا معك</span>
         </h1>
         <p className="lead hero-lead">
-          المنصة المعتمدة لربط قاعات الأفراح ومنظمي الفعاليات بأسطول طيّاري درون
-          نخبة. تغطية سينمائية موثوقة ومرخّصة بالكامل.
+          نربطك بطيّارين درون مرخّصين ومتمرّسين، وتطلع لك تغطية سينمائية للعرس أو
+          الفعالية — بدون لفّ ودوران على التصاريح والتنسيق، إحنا نمشيها معاك خطوة
+          بخطوة.
         </p>
         <div className="hero-ctas">
           <a className="btn btn-primary" href="#halls">
-            فعّل بوابة القاعات
+            فعّل بوابة قاعتك
           </a>
           <a className="btn btn-ghost" href="#gallery">
-            شاهد أعمالنا
+            شوف نماذج التصوير
           </a>
         </div>
         <a className="hero-more" href="#about">
-          اكتشف المزيد
+          طالع من نحن وش نسوي
           <span className="hero-more-chevron" aria-hidden="true">
             ↓
           </span>
