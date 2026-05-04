@@ -18,7 +18,7 @@ const BENEFITS = [
 
 export function HallsPortalSection() {
   return (
-    <section id="halls" className="section halls" aria-labelledby="halls-title">
+    <section id="halls" className="section halls" data-reveal aria-labelledby="halls-title">
       <div className="shell halls-layout">
         <div className="halls-copy">
           <p className="section-kicker section-kicker-en">HALLS PORTAL</p>

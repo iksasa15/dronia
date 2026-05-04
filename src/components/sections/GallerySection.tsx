@@ -19,7 +19,7 @@ const IMAGES = [
 
 export function GallerySection() {
   return (
-    <section id="gallery" className="section gallery" aria-labelledby="gallery-title">
+    <section id="gallery" className="section gallery" data-reveal aria-labelledby="gallery-title">
       <div className="shell">
         <p className="section-kicker">معرض الأعمال</p>
         <h2 id="gallery-title" className="section-title">

@@ -18,7 +18,7 @@ const PILLARS = [
 
 export function WhoWeAreSection() {
   return (
-    <section id="about" className="section who" aria-labelledby="who-title">
+    <section id="about" className="section who" data-reveal aria-labelledby="who-title">
       <div className="shell">
         <p className="section-kicker section-kicker-en">WHO WE ARE</p>
         <h2 id="who-title" className="section-title">

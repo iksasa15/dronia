@@ -15,7 +15,12 @@ const ITEMS = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="section services" aria-labelledby="services-title">
+    <section
+      id="services"
+      className="section services"
+      data-reveal
+      aria-labelledby="services-title"
+    >
       <div className="shell">
         <p className="section-kicker">خدماتنا</p>
         <h2 id="services-title" className="section-title">

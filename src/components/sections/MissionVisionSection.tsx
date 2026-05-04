@@ -1,6 +1,6 @@
 export function MissionVisionSection() {
   return (
-    <section className="section mission-vision" aria-label="الرسالة والرؤية">
+    <section className="section mission-vision" data-reveal aria-label="الرسالة والرؤية">
       <div className="shell mission-grid">
         <article className="mv-card mv-card--accent">
           <p className="section-kicker section-kicker-en">MISSION</p>

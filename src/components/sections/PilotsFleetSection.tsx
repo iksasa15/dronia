@@ -18,7 +18,7 @@ const BENEFITS = [
 
 export function PilotsFleetSection() {
   return (
-    <section id="pilots" className="section pilots" aria-labelledby="pilots-title">
+    <section id="pilots" className="section pilots" data-reveal aria-labelledby="pilots-title">
       <div className="shell halls-layout pilots-layout">
         <div className="halls-copy">
           <p className="section-kicker section-kicker-en">ELITE FLEET</p>

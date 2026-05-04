@@ -1,7 +1,14 @@
+import { useRef } from 'react'
+import { useHeroParallax } from '../../hooks/useHeroParallax'
+import { TrustRibbon } from './TrustRibbon'
+
 export function HeroSection() {
+  const bgRef = useRef<HTMLDivElement>(null)
+  useHeroParallax(bgRef)
+
   return (
-    <section className="hero" aria-labelledby="hero-title">
-      <div className="hero-bg" aria-hidden="true" />
+    <section className="hero hero--stack" aria-labelledby="hero-title">
+      <div className="hero-bg hero-bg--parallax" ref={bgRef} aria-hidden="true" />
       <div className="hero-inner shell">
         <p className="hero-kicker">شراكات رقمية للأفراح والمناسبات في المملكة العربية السعودية</p>
         <p className="hero-brand" aria-hidden="true">
@@ -31,6 +38,7 @@ export function HeroSection() {
           </span>
         </a>
       </div>
+      <TrustRibbon />
     </section>
   )
 }
