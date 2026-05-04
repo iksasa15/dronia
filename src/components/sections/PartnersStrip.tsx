@@ -1,4 +1,9 @@
-const PLACEHOLDERS = ['قريباً: شريك ١', 'قريباً: شريك ٢', 'قريباً: شريك ٣', 'قريباً: شريك ٤'] as const
+const PLACEHOLDERS = [
+  { id: 'p1', label: 'شريك (قريباً)' },
+  { id: 'p2', label: 'شريك (قريباً)' },
+  { id: 'p3', label: 'شريك (قريباً)' },
+  { id: 'p4', label: 'شريك (قريباً)' },
+] as const
 
 export function PartnersStrip() {
   return (
@@ -6,16 +11,17 @@ export function PartnersStrip() {
       <div className="shell">
         <p className="section-kicker section-kicker-en">PARTNERS</p>
         <h2 id="partners-title" className="section-title">
-          شركاء نفتخر إننا مشينا وياهم
+          شركاء النجاح
         </h2>
         <p className="section-lead partners-intro">
-          هنا نعرض الشعارات لما تتثبت الشراكات — الحين نماذج placeholder للتصميم.
+          يُعرض هنا شعار الشركاء عند اعتماد الشراكات رسمياً؛ الحالي نماذج للتصميم
+          فقط.
         </p>
         <ul className="partners-row">
-          {PLACEHOLDERS.map((name) => (
-            <li key={name} className="partner-badge">
+          {PLACEHOLDERS.map(({ id, label }) => (
+            <li key={id} className="partner-badge">
               <span className="partner-dot" aria-hidden="true" />
-              {name}
+              {label}
             </li>
           ))}
         </ul>

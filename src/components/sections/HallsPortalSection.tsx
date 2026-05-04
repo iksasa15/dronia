@@ -1,18 +1,18 @@
 const BENEFITS = [
   {
     num: '01',
-    title: 'تصاريح مرتّبة',
-    text: 'نمشي معاك مسار الموافقات عشان ما يتعطّل عرضك على «باقي الإجراءات».',
+    title: 'تصاريح منظّمة',
+    text: 'مسار موحّد للموافقات مع الجهات المختصة لتفادي التعطيل الإداري.',
   },
   {
     num: '02',
-    title: 'دخل زيادة بدون تعب معدات',
-    text: 'تضيف خدمة التصوير الجوّي لباقتك وتستفيد مادياً — بدون ما تشتري معدات ولا تظبط طاقم تصوير جوّي كامل.',
+    title: 'عائد إضافي دون عبء معدات',
+    text: 'إدراج خدمة التصوير الجوّي ضمن الباقات مع استفادة مادية، دون شراء معدات أو تشكيل فريق جوّي كامل.',
   },
   {
     num: '03',
-    title: 'دعم تشغيلي ويا فريقك',
-    text: 'ننسّق مباشرة مع منسّق الفعالية عندك عشان يوم الزفاف أو الحفل يمشي على مهله.',
+    title: 'دعم تشغيلي للفريق',
+    text: 'تنسيق مباشر مع منسّق الفعالية لدى القاعة لضمان انسيابية يوم المناسبة.',
   },
 ] as const
 
@@ -26,8 +26,8 @@ export function HallsPortalSection() {
             بوابة شركاء القاعات
           </h2>
           <p className="halls-lead">
-            حاب تضيف «تصوير من فوق» لباقاتك؟ درونيا تمشّيها معاك من غير ما تزيد
-            ضغط التشغيل على فريقك — نرتّب الطيّار والتصاريح والتنسيق.
+            إن كنت ترغب في إضافة التصوير الجوّي إلى باقاتك، فتتولى درونيا تنسيق
+            الطيّار والتصاريح والتشغيل بما يخفّض الضغط على فريق القاعة.
           </p>
           <ul className="benefits-list">
             {BENEFITS.map((b) => (
@@ -49,7 +49,7 @@ export function HallsPortalSection() {
           aria-labelledby="halls-form-title"
         >
           <p id="halls-form-title" className="sr-only">
-            طلب تفعيل بوابة القاعة
+            نموذج طلب تفعيل بوابة القاعة
           </p>
           <label className="field">
             <span>اسم القاعة</span>
@@ -64,22 +64,22 @@ export function HallsPortalSection() {
             <input name="phone" type="tel" autoComplete="tel" />
           </label>
           <label className="field">
-            <span>البريد</span>
+            <span>البريد الإلكتروني</span>
             <input name="email" type="email" autoComplete="email" />
           </label>
           <label className="field">
-            <span>تقريباً كم مناسبة بالشهر؟</span>
+            <span>عدد المناسبات شهرياً (تقريبي)</span>
             <select name="volume" defaultValue="">
               <option value="" disabled>
-                اختَر…
+                يُرجى الاختيار
               </option>
-              <option>١ إلى ٥</option>
-              <option>٦ إلى ١٥</option>
+              <option>من ١ إلى ٥</option>
+              <option>من ٦ إلى ١٥</option>
               <option>أكثر من ١٥</option>
             </select>
           </label>
           <button type="submit" className="btn btn-primary btn-block">
-            أرسل طلب التفعيل
+            إرسال طلب التفعيل
           </button>
         </form>
       </div>

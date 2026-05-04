@@ -11,13 +11,17 @@ export function ThemeToggle() {
       onClick={toggleTheme}
       aria-pressed={isDark}
       aria-label={
-        isDark ? 'بدّل للوضع الفاتح' : 'ارجع للوضع الغامق'
+        isDark
+          ? 'التبديل إلى المظهر الفاتح'
+          : 'التبديل إلى المظهر الداكن'
       }
     >
       <span className="theme-toggle__icon" aria-hidden="true">
         {isDark ? '☀️' : '🌙'}
       </span>
-      <span className="theme-toggle__label">{isDark ? 'فاتح' : 'غامق'}</span>
+      <span className="theme-toggle__label">
+        {isDark ? 'مظهر فاتح' : 'مظهر داكن'}
+      </span>
     </button>
   )
 }
