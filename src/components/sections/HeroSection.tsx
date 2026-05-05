@@ -10,7 +10,6 @@ export function HeroSection() {
     <section className="hero hero--stack" aria-labelledby="hero-title">
       <div className="hero-bg hero-bg--parallax" ref={bgRef} aria-hidden="true" />
       <div className="hero-inner shell">
-        <p className="hero-kicker">شراكات رقمية للأفراح والمناسبات في المملكة العربية السعودية</p>
         <p className="hero-brand" aria-hidden="true">
           DRONIA
         </p>

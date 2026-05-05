@@ -4,10 +4,8 @@ import { DroniaMark } from '../ui/DroniaMark'
 const NAV_LINKS = [
   { href: '#about', label: 'من نحن' },
   { href: '#services', label: 'خدماتنا' },
-  { href: '#why-dronia', label: 'لماذا درونيا' },
   { href: '#gallery', label: 'معرض الأعمال' },
   { href: '#pilots', label: 'الطيّارون' },
-  { href: '#partners', label: 'شركاؤنا' },
   { href: '#halls', label: 'بوابة القاعات' },
   { href: '#faq', label: 'الأسئلة الشائعة' },
 ] as const

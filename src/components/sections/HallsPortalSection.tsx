@@ -1,3 +1,6 @@
+import { BookingCardsStrip } from '../ui/BookingCardsStrip'
+import { DEMO_PHOTOGRAPHERS } from '../../data/demoPhotographers'
+
 const BENEFITS = [
   {
     num: '01',
@@ -19,7 +22,8 @@ const BENEFITS = [
 export function HallsPortalSection() {
   return (
     <section id="halls" className="section halls" data-reveal aria-labelledby="halls-title">
-      <div className="shell halls-layout">
+      <div className="shell halls-stack">
+      <div className="halls-layout">
         <div className="halls-copy">
           <p className="section-kicker section-kicker-en">HALLS PORTAL</p>
           <h2 id="halls-title" className="section-title">
@@ -82,6 +86,8 @@ export function HallsPortalSection() {
             إرسال طلب التفعيل
           </button>
         </form>
+      </div>
+      <BookingCardsStrip heading="اختر المصوّر" cards={DEMO_PHOTOGRAPHERS} />
       </div>
     </section>
   )

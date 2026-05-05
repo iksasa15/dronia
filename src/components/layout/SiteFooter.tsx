@@ -3,7 +3,6 @@ import { DroniaMark } from '../ui/DroniaMark'
 const FOOTER_LINKS = [
   { href: '#about', label: 'من نحن' },
   { href: '#services', label: 'خدماتنا' },
-  { href: '#why-dronia', label: 'لماذا درونيا' },
   { href: '#gallery', label: 'معرض الأعمال' },
   { href: '#pilots', label: 'الطيّارون' },
   { href: '#halls', label: 'بوابة القاعات' },

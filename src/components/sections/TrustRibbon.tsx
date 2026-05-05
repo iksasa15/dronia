@@ -16,7 +16,7 @@ export function TrustRibbon() {
           </li>
         ))}
       </ul>
-      <div className="trust-stats" role="group" aria-label="أرقام تقريبية — قابلة للربط بالبيانات الفعلية">
+      <div className="trust-stats" role="group" aria-label="أرقام مؤشرة">
         {STATS.map(({ value, label }) => (
           <div key={label} className="trust-stat">
             <span className="trust-stat__value">{value}</span>
@@ -24,7 +24,6 @@ export function TrustRibbon() {
           </div>
         ))}
       </div>
-      <p className="trust-ribbon-note">الأرقام أعلاه للعرض التوضيحي ويمكن ربطها لاحقاً بالبيانات الحقيقية.</p>
     </div>
   )
 }
