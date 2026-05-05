@@ -13,8 +13,9 @@
   --color-brand-muted: rgba(5, 67, 145, 0.55);
   --color-card-shade: #061f3d;
   --color-mission-bg: rgba(5, 67, 145, 0.25);
-  --shadow-card: 0 24px 56px rgba(0, 0, 0, 0.42);
-  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.25);
+  /* Softer elevation — less “muddy” on dark backgrounds */
+  --shadow-card: 0 16px 44px rgba(0, 0, 0, 0.34);
+  --shadow-soft: 0 6px 22px rgba(0, 0, 0, 0.2);
   --color-header-bg: rgba(3, 10, 18, 0.78);
   --color-hero-glow: rgba(94, 177, 250, 0.14);
   --color-section-services: #050f1a;
@@ -24,6 +25,10 @@
 
   /* Type — matches font/AppFont.swift (IBM Plex Sans Arabic) */
   --font-sans: 'IBM Plex Sans Arabic', 'Segoe UI', system-ui, sans-serif;
+  --leading-heading: 1.18;
+  --leading-title: 1.22;
+  --leading-prose: 1.68;
+  --max-readability: 40rem;
 
   /* Spacing & radii */
   --space-1: 0.35rem;
