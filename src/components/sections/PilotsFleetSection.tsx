@@ -1,96 +1,58 @@
 const BENEFITS = [
   {
-    num: '01',
-    title: 'طلبات مجدولة',
-    text: 'تقليل الجهد المبذول في البحث عن العملاء، مع طلبات منظّمة يوم الفعالية.',
+    id: 'requests',
+    title: 'طلبات ثابتة',
+    text: 'احصل على طلبات منتظمة بدون عناء البحث عن العملاء. نجيب لك الفرص — وأنت تركّز على الإبداع.',
   },
   {
-    num: '02',
-    title: 'وضوح قانوني وتأميني',
-    text: 'مسار واضح للتصاريح والتأمين وفق السياسات المعتمدة.',
+    id: 'payment',
+    title: 'دفع مضمون',
+    text: 'دفع آمن خلال 48 ساعة من التسليم. لا مماطلة ولا قروشة — أنت تحلّق ونحن نضمن حقك.',
   },
   {
-    num: '03',
-    title: 'عائد يتناسب مع الخبرة',
-    text: 'عوائد تتوافق مع مستوى الخبرة ونوع المعدات ونطاق الخدمة المقدّمة.',
+    id: 'community',
+    title: 'سرب محترف',
+    text: 'أول مجتمع طيّارين في السعودية — دعم وتنسيق يخلّيك تركّز على الطيران والإخراج.',
   },
 ] as const
 
 export function PilotsFleetSection() {
   return (
-    <section id="pilots" className="section pilots" data-reveal aria-labelledby="pilots-title">
-      <div className="shell halls-layout pilots-layout">
-        <div className="halls-copy">
-          <p className="section-kicker section-kicker-en">ELITE FLEET</p>
-          <h2 id="pilots-title" className="section-title">
-            شبكة طيّاري النخبة
+    <section
+      id="pilots"
+      className="section pilots pilots--flagship"
+      data-reveal
+      aria-labelledby="pilots-title"
+    >
+      <div className="shell pilots-shell">
+        <header className="pilots-intro">
+          <p className="section-kicker section-kicker-en">JOIN THE FLEET</p>
+          <h2 id="pilots-title" className="pilots-title">
+            هل أنت طيار درون مرخّص؟
           </h2>
-          <p className="halls-lead">
-            إذا كنت تحمل ترخيصاً سارياً وترغب في طلبات أوضح ودعم تشغيلي، يمكنك
-            الانضمام إلى شبكة درونيا مع التركيز على الجانب الفني للإخراج.
+          <p className="pilots-subtitle">
+            انضم لسرب درونيا — أول مجتمع للطيّارين المحترفين في السعودية
           </p>
-          <ul className="benefits-list">
-            {BENEFITS.map((b) => (
-              <li key={b.num} className="benefit-row">
-                <span className="benefit-num">{b.num}</span>
-                <div>
-                  <h3>{b.title}</h3>
-                  <p>{b.text}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
+        </header>
+
+        <ul className="pilots-benefits-grid" role="list">
+          {BENEFITS.map((b) => (
+            <li key={b.id} className="pilots-benefit-card">
+              <h3 className="pilots-benefit-card__title">{b.title}</h3>
+              <p className="pilots-benefit-card__text">{b.text}</p>
+            </li>
+          ))}
+        </ul>
+
+        <div className="pilots-cta-block">
+          <a className="btn btn-primary btn-lg" href="#register-pilot">
+            سجّل الآن — انضم لسرب درونيا
+          </a>
+          <p className="pilots-social-proof">
+            هدفنا: +50 كابتن في الأسبوع الأول | الانضمام مجاناً 100%
+          </p>
         </div>
-        <form
-          className="lead-form"
-          onSubmit={(e) => {
-            e.preventDefault()
-          }}
-          aria-labelledby="pilots-form-title"
-        >
-          <p id="pilots-form-title" className="sr-only">
-            نموذج طلب انضمام الطيّار
-          </p>
-          <label className="field">
-            <span>الاسم الكامل</span>
-            <input name="name" type="text" autoComplete="name" />
-          </label>
-          <label className="field">
-            <span>رقم الجوال</span>
-            <input name="phone" type="tel" autoComplete="tel" />
-          </label>
-          <label className="field">
-            <span>حالة ترخيص الهيئة العامة للطيران المدني</span>
-            <select name="license" defaultValue="">
-              <option value="" disabled>
-                يُرجى الاختيار
-              </option>
-              <option>مرخّص — مستوى معتمد</option>
-              <option>شهادات معتمدة أخرى</option>
-              <option>قيد الإصدار</option>
-            </select>
-          </label>
-          <label className="field">
-            <span>مجال التخصص</span>
-            <select name="spec" defaultValue="">
-              <option value="" disabled>
-                يُرجى الاختيار
-              </option>
-              <option>FPV</option>
-              <option>تصوير داخلي</option>
-              <option>سينمائي</option>
-              <option>Mavic / Inspire</option>
-              <option>رصد واستطلاع</option>
-            </select>
-          </label>
-          <label className="field">
-            <span>رابط معرض الأعمال (اختياري)</span>
-            <input name="portfolio" type="url" placeholder="https://" />
-          </label>
-          <button type="submit" className="btn btn-primary btn-block">
-            إرسال طلب الانضمام
-          </button>
-        </form>
+
       </div>
     </section>
   )

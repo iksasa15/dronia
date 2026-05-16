@@ -1,11 +1,12 @@
 import { DroniaMark } from '../ui/DroniaMark'
 
 const FOOTER_LINKS = [
-  { href: '#about', label: 'من نحن' },
-  { href: '#services', label: 'خدماتنا' },
-  { href: '#gallery', label: 'معرض الأعمال' },
-  { href: '#pilots', label: 'الطيّارون' },
-  { href: '#halls', label: 'بوابة القاعات' },
+  { href: '#services', label: 'لمن درونيا؟' },
+  { href: '#pilots', label: 'الكباتن' },
+  { href: '#book', label: 'كيف نعمل' },
+  { href: '#showcase', label: 'الشو' },
+  { href: '#partners', label: 'شركاؤنا' },
+  { href: '#register', label: 'التسجيل' },
   { href: '#faq', label: 'الأسئلة الشائعة' },
 ] as const
 
@@ -18,7 +19,7 @@ export function SiteFooter() {
           <div className="footer-brand-text">
             <span className="logo-mark footer-logo">DRONIA</span>
             <p className="footer-tag">
-              منصة تسهّل التصوير الجوّي المرخّص للقاعات والمنسّقين والعملاء
+              منصة تربطك بأفضل طيّاري الدرون المرخّصين في السعودية
             </p>
           </div>
         </div>

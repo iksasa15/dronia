@@ -1,21 +1,4 @@
-const IMAGES = [
-  {
-    src: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=720&q=80',
-    alt: 'لقطة جويّة لمنطقة طبيعية',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=720&q=80',
-    alt: 'منظر علوي لساحل',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=720&q=80',
-    alt: 'منظر جوّي لغابة وجبال',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=720&q=80',
-    alt: 'منظر ليلي من الأعلى',
-  },
-] as const
+import { GALLERY_IMAGES } from '../../data/galleryImages'
 
 export function GallerySection() {
   return (
@@ -26,11 +9,12 @@ export function GallerySection() {
           نماذج من اللقطات الجوّية
         </h2>
         <p className="section-lead gallery-intro">
-          صور توضيحية من أرشيف نمطي للعرض؛ يُستبدل لاحقاً بأعمال فعلية للمنصة.
+          لقطات من داخل المملكة — الرياض والعلا وغيرها. يُستبدل لاحقاً بأعمال فعلية
+          لطيّاري السرب عند الإطلاق.
         </p>
         <ul className="gallery-grid">
-          {IMAGES.map((img) => (
-            <li key={img.src} className="gallery-cell">
+          {GALLERY_IMAGES.map((img) => (
+            <li key={img.id} className="gallery-cell">
               <img
                 src={img.src}
                 alt={img.alt}
@@ -40,6 +24,7 @@ export function GallerySection() {
                 decoding="async"
                 className="gallery-img"
               />
+              <span className="gallery-cell__location">{img.location}</span>
             </li>
           ))}
         </ul>

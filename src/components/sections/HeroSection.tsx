@@ -14,24 +14,24 @@ export function HeroSection() {
           DRONIA
         </p>
         <h1 id="hero-title" className="hero-title">
-          <span className="hero-title-line">ارتقِ بخدمات منشأتك</span>{' '}
-          <span className="hero-title-line hero-title-accent">مع درونيا</span>
+          <span className="hero-title-line">وثق لحظاتك</span>{' '}
+          <span className="hero-title-line hero-title-accent">من السماء</span>
         </h1>
         <p className="lead hero-lead">
-          نربط قاعات الأفراح ومنسّقي الفعاليات بطيّاري درون مرخّصين، ونوفّر تغطية
-          جوّية احترافية مع الاهتمام بالتصاريح والتنسيق التشغيلي — خطوة بخطوة
-          وبضوح في الإجراءات.
+          منصة تربطك بأفضل طيّاري الدرون المرخّصين في السعودية —
+          <br />
+          أعراس، فعاليات، مؤتمرات، وحفلات
         </p>
         <div className="hero-ctas">
-          <a className="btn btn-primary" href="#halls">
-            تفعيل بوابة القاعة
+          <a className="btn btn-primary" href="#register-client">
+            احجز جلسة تصوير
           </a>
-          <a className="btn btn-ghost" href="#gallery">
-            استعراض معرض الأعمال
+          <a className="btn btn-ghost" href="#register-pilot">
+            انضم لسرب الكباتن
           </a>
         </div>
-        <a className="hero-more" href="#about">
-          التعرّف على درونيا
+        <a className="hero-more" href="#services">
+          لمن درونيا؟
           <span className="hero-more-chevron" aria-hidden="true">
             ↓
           </span>

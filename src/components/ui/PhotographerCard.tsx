@@ -125,7 +125,7 @@ export function PhotographerCard({
               <div className="photographer-dialog__actions">
                 <a
                   className="btn btn-primary btn-block"
-                  href="#halls"
+                  href="#register-client"
                   onClick={closeDialog}
                   autoFocus
                 >

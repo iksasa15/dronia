@@ -1,15 +1,29 @@
-const ITEMS = [
+import { OccasionSlideIcon } from '../ui/OccasionSlideIcon'
+
+const SLIDES = [
   {
-    title: 'تصوير جوّي احترافي',
-    text: 'لقطات علوية عالية الجودة للمناسبات، مع الالتزام بمعايير السلامة والجودة.',
+    id: 'weddings',
+    icon: 'wedding' as const,
+    title: 'الأعراس',
+    text: 'احفظ ذكريات يوم زفافك — لقطات جوّية من السماء تبقى معاك للأبد.',
   },
   {
-    title: 'التصاريح والامتثال',
-    text: 'مسار واضح للموافقات والجهات المختصة، بما يخفّف العبء عن الشركاء.',
+    id: 'events',
+    icon: 'event' as const,
+    title: 'الفعاليات',
+    text: 'وثّق فعالياتك الكبيرة بزاوية ما تتكرّر مرتين.',
   },
   {
-    title: 'تنسيق تشغيلي',
-    text: 'جدولة وتواصل منظّم بين القاعة والطيّار لضمان سير الفعالية بسلاسة.',
+    id: 'conferences',
+    icon: 'conference' as const,
+    title: 'المؤتمرات',
+    text: 'عطّ مؤتمرك طابع احترافي — تغطية من فوق تليق فيه.',
+  },
+  {
+    id: 'parties',
+    icon: 'party' as const,
+    title: 'الحفلات الخاصة',
+    text: 'حوّل حفلتك لتجربة بصرية ما تشبه أي حفلة ثانية.',
   },
 ] as const
 
@@ -17,20 +31,22 @@ export function ServicesSection() {
   return (
     <section
       id="services"
-      className="section services"
+      className="section services occasion-slides-section"
       data-reveal
       aria-labelledby="services-title"
     >
       <div className="shell">
-        <p className="section-kicker">خدماتنا</p>
         <h2 id="services-title" className="section-title">
-          ما الذي تقدّمه درونيا للقاعات والمنسّقين؟
+          لمن درونيا؟
         </h2>
-        <ul className="services-grid">
-          {ITEMS.map((item) => (
-            <li key={item.title} className="services-card">
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
+        <ul className="occasion-slides" role="list">
+          {SLIDES.map((slide) => (
+            <li key={slide.id} className="occasion-slide">
+              <div className="occasion-slide__icon" aria-hidden="true">
+                <OccasionSlideIcon kind={slide.icon} className="occasion-slide__svg" />
+              </div>
+              <h3 className="occasion-slide__title">{slide.title}</h3>
+              <p className="occasion-slide__text">{slide.text}</p>
             </li>
           ))}
         </ul>

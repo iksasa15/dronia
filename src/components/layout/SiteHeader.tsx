@@ -2,11 +2,12 @@ import { ThemeToggle } from '../ui/ThemeToggle'
 import { DroniaMark } from '../ui/DroniaMark'
 
 const NAV_LINKS = [
-  { href: '#about', label: 'من نحن' },
-  { href: '#services', label: 'خدماتنا' },
-  { href: '#gallery', label: 'معرض الأعمال' },
-  { href: '#pilots', label: 'الطيّارون' },
-  { href: '#halls', label: 'بوابة القاعات' },
+  { href: '#services', label: 'لمن درونيا؟' },
+  { href: '#pilots', label: 'الكباتن' },
+  { href: '#book', label: 'كيف نعمل' },
+  { href: '#showcase', label: 'الشو' },
+  { href: '#partners', label: 'شركاؤنا' },
+  { href: '#register', label: 'التسجيل' },
   { href: '#faq', label: 'الأسئلة الشائعة' },
 ] as const
 
@@ -18,7 +19,7 @@ export function SiteHeader() {
         <span className="logo-text-stack">
           <span className="logo-mark">DRONIA</span>
           <span className="logo-tag">
-            التوثيق الجوّي للمناسبات — بمعايير الترخيص والتنسيق
+            غطِّ مناسباتك من السماء، أعراس، فعاليات، مؤتمرات
           </span>
         </span>
       </a>
